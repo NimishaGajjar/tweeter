@@ -1,0 +1,10 @@
+footer.scroll-up {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  z-index: 1;
+}
+
+.fa-circle {
+  color: red;
+}

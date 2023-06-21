@@ -1,0 +1,26 @@
+nav {
+  position: sticky;
+  top: 0;
+  height: 120px;
+  width: 100%;
+  padding: 1.5em;
+  background-color: #4056A1;
+  color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.Tweeter {
+  font-family: "Bungee", sans-serif;
+}
+
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans 3", sans-serif;
+  align-items: center;
+}

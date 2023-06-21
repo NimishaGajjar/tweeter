@@ -1,0 +1,27 @@
+#display-user {
+  height: 406px;
+  padding-top: 60px;
+  width: 100%;
+  background-color: #3db4b8;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+  display: flex;
+  flex-direction: column;
+  font-family: "Source Sans 3", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  margin-top: -0.5em;
+}
+
+.name {
+  margin: 0px;
+  color: #2206f6;
+  padding-bottom: 15px
+}
+
+.notbold {
+  font-weight: normal;
+
+}

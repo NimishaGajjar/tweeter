@@ -1,0 +1,48 @@
+section.new-tweet {
+  width: 100%;
+  margin: 1em;
+}
+
+#post-tweet {
+  width: 92%;
+
+}
+
+.tweet-button-counter {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Bungee', sans-serif;
+}
+
+button {
+  height: 50px;
+  background-color: #4056a1;
+  color: #ffff;
+}
+
+.main-tweet-form {
+  resize: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tweet-text {
+  resize: none;
+  background: transparent;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-width: 5px;
+  height: auto;
+  width: 100%;
+}
+
+#tweet-text ::placeholder {
+  color: black;
+  font-size: 1em;
+}
