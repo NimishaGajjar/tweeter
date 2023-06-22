@@ -58,12 +58,12 @@ $(document).ready(function() {
 
 
   const renderTweets = function(tweets) {
+    $('.tweets-container').empty();
     for (tweet of tweets) {  // loops through tweets
 
       const $tweet = createTweetElement(tweet);  // calls createTweetElement for each tweet
 
       $('.tweets-container').prepend($tweet);  // takes return value and appends it to the tweets container
-      // timeago.render(document.querySelectorAll(".time-stamp"));
     }
   };
 
