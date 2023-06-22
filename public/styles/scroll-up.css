@@ -1,0 +1,22 @@
+/*for scroll-up button */
+.scroll-to-top button {
+  outline: none;
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 3.5em;
+  z-index: 99;
+  border: none;
+  background-color: #888;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 100%;
+}
+
+.scroll-to-top button:hover {
+  box-shadow: 4px 4px #f5a299;
+}
+
+.scroll-to-top button .fas {
+  color: rgb(251, 251, 251);
+}

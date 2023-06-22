@@ -4,10 +4,10 @@ nav {
   height: 120px;
   width: 100%;
   padding: 1.5em;
-  background-color: #4056A1;
+  background-color: #888;
   color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  font-size: 28px;
+  background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+  /* font-size: 28px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -16,6 +16,8 @@ nav {
 
 .Tweeter {
   font-family: "Bungee", sans-serif;
+  float: left;
+
 }
 
 .new-tweet {
@@ -23,4 +25,33 @@ nav {
   flex-direction: column;
   font-family: "Source Sans 3", sans-serif;
   align-items: center;
+}
+
+
+.fas.fa-angle-double-down {
+  color: #f5a299;
+}
+
+#nav-double-arrow {
+  animation: up-down 5s linear infinite;
+}
+
+@keyframes up-down {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(50%);
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #888;
+    background-image: url("https://www.transparenttextures.com/patterns/black-felt.png");
+
+  }
 }

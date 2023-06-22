@@ -27,16 +27,15 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
   <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
-
+  <link rel="stylesheet" href="/styles/scroll-up.css" type="text/css" />
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="scripts/composer-char-counter.js"></script>
-
+  <script type="text/javascript" src="/scripts/scroll-up.js"></script>
 
 </head>
 
@@ -45,27 +44,26 @@
   <nav>
     <span class="Tweeter">Tweeter</span>
     <div class="new-tweet">
-      <div><b>Write</b> a new tweet</div>
-      <div style="color:#be0c0c"><span><a><i class="fas fa-angle-double-down"></i></a></span></div>
+      <span id="nav-tweet-msg"><b>Write</b> a new Tweet</span>
+      <span id="nav-double-arrow"><i class="fas fa-angle-double-down"></i></span>
     </div>
   </nav>
-
+  <!-- Header with user avatar and name-->
   <div class="tweetbox-tweets">
 
     <header id="display-user">
       <div class="image">
         <img src="/images/profile-hex.png">
       </div>
-      <br>
       <div class="name">
-        <h2>Amy <span class='notbold'>Mitchell</span></h2>
+        <h2>Nimisha<span class='notbold'> Gajjar</span></h2>
       </div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-
       <section class="new-tweet">
+        <div class="empty-error"></div>
         <form id="post-tweet" action="/tweets" method="POST">
           <div class="main-tweet-form">
             <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
@@ -75,29 +73,14 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-        <section class="tweets-container">
-          <!-- Container for tweets -->
-          <article class="tweet">
-            <header class="tweet-header">
-              <img src="/images/profile-hex.png" alt="AVI">
-              <h3 class="username">Nimi</h3>
-              <span class="handle">@nimigajjar</span>
-            </header>
-            <div class="content">
-              <p>Hello How are you doing today!!.
-              </p>
-            </div>
-            <footer>
-              <span class="timestamp">1 hours ago</span>
-              <div class="icons">
-                <i class="far fa-flag"></i>
-                <i class="fas fa-retweet"></i>
-                <i class="fas fa-heart"></i>
-              </div>
-            </footer>
-          </article>
-        </section>
       </section>
+      <section class="tweets-container">
+      </section>
+      <div class="scroll-to-top">
+        <button title="To top">
+          <i class="fas fa-angle-double-up"></i>
+        </button>
+      </div>
     </main>
   </div>
 </body>

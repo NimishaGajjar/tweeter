@@ -3,14 +3,12 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: space-evenly;
-  margin: 4em;
 }
 
 .tweet {
   width: 100%;
-  height: 200px;
-  margin: 5px;
-  margin-bottom: 10px;
+  max-width: 1000px;
+  margin: 1em auto;
   padding: 10px;
   border-width: 5px;
   border-style: solid;
@@ -18,6 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  word-wrap: break-word;
+  font-size: 0.85em;
 }
 
 .tweet header {
@@ -40,18 +40,16 @@ article.tweet h3.username {
   margin-right: auto;
 }
 
-
-
 .tweet span.handle {
   color: #888;
 }
 
-.tweet .content p {
+.tweet .content {
+  width: 100%;
   margin: 10px 0;
   border-bottom: 4px solid #888;
-  display: flex;
-  justify-content: left;
-  
+  word-wrap: break-word;
+  text-align: left;
 }
 
 .tweet footer {
@@ -61,7 +59,7 @@ article.tweet h3.username {
   color: #888;
 }
 
-.tweet .timestamp {
+.tweet.timestamp {
   font-size: 20px;
   font-family: "Source Sans 3", sans-serif;
 }
@@ -77,27 +75,17 @@ article.tweet h3.username {
 
 /* Hover State */
 .tweet:hover {
-  box-shadow: 0 30px 30px rgba(63, 60, 60, 0.66);
+  box-shadow: 0 5px 5px #f5a299;
 }
 
 .icons i:hover {
-  color: #0a0dd0;
+  color: #f5a299;
 }
 
 article.tweet {
   border: 4.5px solid #888;
+  ;
 
-}
-
-h3 {
-  display: block;
-  font-size: 1.0em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  margin-top: auto;
 }
 
 .tweets-container {
